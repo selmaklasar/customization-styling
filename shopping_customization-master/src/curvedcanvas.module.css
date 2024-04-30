@@ -1,0 +1,235 @@
+.curved_app {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(126, 125, 125);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+  
+  .curved_app select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+  }
+
+  .canvas_background{
+
+background-color:white;
+
+margin-top: 50px;
+position: absolute;
+justify-content: center;
+display: flex;
+
+
+
+  }
+
+
+
+ 
+
+
+
+
+.header_font{
+  color: white;
+  font-size: 10px;
+}
+
+
+ 
+ .text_field {
+  position: absolute;
+  top: 50px; 
+  left: 0; 
+  display: flex;
+  flex-direction: column; /* Stack input fields vertically */
+  padding-left: 30px; 
+  
+ 
+}
+.text_field  input{
+  padding-right: 5px;
+ 
+ 
+}
+.inputfield {
+  display: flex;
+  align-items: center; 
+  width: 150px;
+}
+
+
+
+.curve input {
+  width: 150px; /* Adjust the width as needed */
+  padding: 5px; /* Adjust padding as needed */
+  margin-right: 16px;
+}
+
+.curve  p{
+  color: white;
+  font-size: 10px;
+  padding-top: 12px;
+  padding-left: 3px;
+  margin-top: 9px;
+  margin-bottom: 2px;
+
+}
+.header_font{
+  padding-top: 6px;
+  font-size: 10px;
+  padding-left: 3px;
+  margin-right: 106px;
+}
+.fontselection{
+  width: 160px;
+  height: 25px;
+top: 0;
+
+margin-right: 5px;
+}
+.fontselection select  option{
+ width: 150px;
+ height: 70px;
+ padding-left: 16px;
+}
+
+
+
+.download_option{
+  display: flex;
+  padding-top: 0;
+  color: black;
+  position: absolute;
+  top: 40px; 
+  margin-left: 5px; 
+ justify-content: center;
+  display: flex;
+  left: 48%;
+  
+}
+
+
+.download_option button{
+  
+  z-index: 9999; 
+  
+  transform: translateX(-50%); /* Center the button horizontally */
+  
+ 
+
+  background-color: black;
+  color: white;
+  float: left;
+  
+  position: absolute;
+justify-content: center;
+display: flex;
+  padding: 10px;
+  width: 200px;
+  height: 20px;
+ 
+  top: 312px;
+  left: -10px;
+  
+ 
+
+
+}
+.download_option .imgdwnload_btn{
+  padding-top: 2px;
+  font-size: 10px;
+  
+}
+
+
+
+
+.imageformat  select{
+  width: 80px;
+  height: 20px;
+  margin-top: 312px;
+  margin-left: 90px;
+  background-color: black;
+color: white;
+font-size: 10px;
+padding-left: 20px;
+}
+@media (max-width: 800px) {
+  .curved_app {
+    max-width: 800px;
+  }
+  
+  .text_field {
+   width: 20%;
+    padding-left: 10px; /* Adjust padding as needed */
+  }
+
+  .inputfield {
+    width: 80%; /* Adjust width as needed */
+  }
+
+  .curve input {
+    width: 80%; /* Adjust width as needed */
+  }
+
+  .fontselection {
+    width: 80%; /* Adjust width as needed */
+  }
+
+  .fontselection select option {
+    width: 100%; /* Adjust width as needed */
+  }
+
+  .download_option button {
+    width: 80%; /* Adjust width as needed */
+  }
+  .header_font{
+    margin-right: 79px;
+}
+
+
+  }
+  @media (max-width: 600px) {
+    .curved_app {
+      max-width: 600px; 
+      padding-left: 30px;
+    }
+    .header_font{
+      margin-right: 12px;
+  }
+  
+    .text_field {
+      width: 80px; /* Adjust width as needed */
+      padding-left: 5px; /* Adjust padding as needed */
+    }
+  
+    .inputfield {
+      width: 90px; /* Adjust width as needed */
+    }
+  
+    .curve  input {
+      width: 90px; 
+      height: 10px;
+    }
+  
+    .fontselection {
+      width: 90px; 
+    }
+  
+    .fontselection select option {
+      width: 100%; 
+    }
+  
+    .download_option button {
+      width: 90%; 
+      top: 310px; 
+      transform: translateX(-50%); /* Center the button horizontally */
+    }
+  }

@@ -148,7 +148,7 @@ const[tshirt_image_side,setTshirt_image_side]=useState("front_side")
                           <Context13.Provider value={[back_image, setBack_image]}>
                         {showdisplay && (
                           <div className={style.app}>
-                            <div className={style.canvas_style} style={{ width: "50vw", height: "50vh" }}>
+                            <div className={style.canvas_styles} style={{ width: "50vw", height: "50vh" }}>
                             <Canvas
   size={['2000px', '3000px']}
   className={style.canvas}

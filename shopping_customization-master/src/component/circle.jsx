@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-
+import styles from './circle.module.css'
  import fonts from '../fonts/mad/mad.ttf' 
-
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 function CanvasDownload2() {
   const canvasRef = useRef(null);
   const [text, setText] = useState('');
@@ -50,13 +51,25 @@ const fontWeight=900
   };
 
   return (
-    <div>
-      <input type="text" value={text} onChange={handleInputChange} placeholder="Enter text" /><br />
-      <input type="number" value={radius} onChange={(e) => setRadius(parseInt(e.target.value))} placeholder="Enter radius" /><br />
-      <input type="number" value={fontSize} onChange={(e) => setFontSize(parseInt(e.target.value))} placeholder="Enter font size" /><br />
-      <canvas ref={canvasRef} width="800" height="500" style={{ border: '1px solid black' }}></canvas><br />
-      <button onClick={handleDownload}>Download Image</button>
-    </div>
+    <div className={styles.container}>
+      
+      <div className={styles.textfield}>
+       <input type="text" value={text} onChange={handleInputChange} placeholder="Enter text" className={styles.Input_field}/><br />
+       </div>
+    <div className={styles.radius}>
+      <input type="number" value={radius} onChange={(e) => setRadius(parseInt(e.target.value))} placeholder="Enter radius" className={styles.radius_field}/><br></br>
+       </div>
+    <div className={styles.fontsize}>
+      <input type="number" value={fontSize} onChange={(e) => setFontSize(parseInt(e.target.value))} placeholder="Enter font size" className={styles.fontsize}/>
+      </div>
+      <div className={styles.canvas}>
+      <canvas ref={canvasRef} width="600" height="400" style={{ border: '2px solid black' }} className={styles.canvass}></canvas><br />
+     
+      </div> 
+      <div className={styles.download_button}>
+      < FontAwesomeIcon icon={faDownload}   onClick={handleDownload}  className={styles.faDownload}  /></div>
+      </div>
+    
   );
 }
 

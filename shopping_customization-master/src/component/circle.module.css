@@ -1,0 +1,265 @@
+.canvass{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
+    
+}
+.fontsize{
+  width: 150px;
+  left: 7px;
+
+  height: 40px;
+  top: 110px;
+
+}
+ .textfield  .Input_field{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+ 
+   margin-right: 373px;
+
+   font-size: 20px;
+
+    
+}
+.textfield{
+    display: flex;
+    left: 15px;
+    top: 587px;
+    position: relative;
+    justify-content: center;
+    color: black;
+
+}
+.radius{
+    position: relative;
+    justify-content: center;
+    
+    
+    top: 541px;
+   left: 5px;
+
+}
+.radius_field{
+    width: 100px;
+    height: 40px;
+}
+.download_button  .faDownload{
+    float: right;
+   
+    height: 30px;
+    margin-top: -540px;
+    margin-right: -780px;
+
+    
+   
+    color: rgb(11, 0, 0);
+
+}
+
+path{
+    fill:black;
+}
+
+
+@media screen and(max-width: 1024px){
+    .canvass{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 151px;
+    }
+}
+@media screen and(max-width: 1250px){
+    .canvass{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+       
+        
+    right: 175px;
+
+    }
+}
+@media screen and(max-width: 750px){
+  .canvass{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    float: left;
+    left: 143px;
+}
+.textfield .Input_field{
+  
+  left: 185px;
+
+  
+
+
+}
+.radius   .radius_field{
+  
+  left: 320px;
+
+}
+.download_button{
+  margin-right: -376px;
+}
+.fontsize{
+  
+  left: 100px;
+  top: 271px;
+
+}
+}
+
+@media screen and(max-width: 490px) {
+  .canvass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    
+    left: 111px;
+   
+
+  }
+  .radius{
+    
+    left: 134px;
+
+   
+
+  }
+  .Input_field{
+    
+    
+
+    margin-right: 198px;
+    
+
+    left: 138px;
+
+  }
+  .fontsize{
+    
+    top: 197px;
+    left: 280px;
+
+   
+
+  }
+  
+}
+
+
+
+@media screen and(max-width: 924px){
+    .canvass{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 180px;
+    }
+}
+@media screen and(max-width: 800px){
+    .canvass{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 100px;
+        width: 588px;
+        height: 575px;
+    }
+    .download_button{
+      margin-right: 900px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .textfieldContainer,
+    .radiusContainer,
+    .fontsize {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .textfieldContainer input,
+    .radiusContainer input,
+    .fontsize input {
+      width: 100%;
+    }
+    
+  }
+@media screen and(max-width: 600px) {
+  .canvass{
+    left: 50px;
+  }
+  
+}
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .textfieldContainer,
+  .radiusContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .textfieldContainer span,
+  .radiusContainer span {
+    margin-right: 10px;
+  }
+  .fontsize{
+    position: relative;
+    justify-content: center;
+    
+    top: 247px;
+    left: 75px;
+
+  }
+  @media screen and (max-width:450px){
+    .canvass{
+      left: 123px;
+    }
+.fontsize{
+  
+ 
+  top: 300px;
+  left: 186px;
+
+
+}
+.textfield{
+  
+  margin-right: 159px;
+
+}
+.radius{
+  
+  left: 123px;
+
+}
+
+
+  }

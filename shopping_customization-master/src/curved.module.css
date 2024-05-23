@@ -1,41 +1,81 @@
 .curved_text_container {
-    position: absolute;
-  
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
     top: 100px;
     left: 100px;
+   
 
+  }
+  
+  #curved-text-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    
   }
   
   .curved_text_svg {
     width: 100%; 
     height: 100%; 
+
+   
+   
+  }
+  .inputfield{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   
+    width: 350px;
+    height: 30px;
+
+
   }
   
+  #curved-text-svg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 250px;
+    top: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+   
+
+  }
   .curved_text {
     font-size: 16px;
     font-family: Arial, sans-serif; 
-    fill: black; 
+    
+    margin-left: 250px;
+
+    
   }
-  path {
+  .curved_text_container     path {
     fill: transparent;
   }
   .shirt{
 
    
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:yellow;
     border: none;
     cursor: pointer;
     border:1px solid black;
     margin-right: 10px;
+    margin-left: 50px;
 }
 .shirt1{
 
  
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:red;
     border: none;
@@ -45,8 +85,8 @@
 }
 .shirt2{
 
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:blue;
     border: none;
@@ -57,8 +97,8 @@
 .shirt3{
 
     
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:green;
     border: none;
@@ -70,8 +110,8 @@
 .shirt4{
 
     
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:purple;
     border: none;
@@ -82,8 +122,8 @@
 .shirt5{
 
     
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:black;
     border: none;
@@ -94,8 +134,8 @@
 .shirt6{
 
     
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:grey;
     border: none;
@@ -106,14 +146,20 @@
 .shirt7{
 
     
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     
     background-color:white;
     border: none;
     cursor: pointer;
     border:1px solid black;
     margin-right: 10px;
+}
+.input_field{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 text{
@@ -122,5 +168,26 @@ position: relative;
 
 left: 100px;
 top: 0px;
+
+}
+
+.color_container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+select{
+  
+  margin-left: 1209px;
+ 
+  margin-top: -110px;
+  width: 120px;
+  height: 35px;
+  background-color: black;
+  color: #ffff;
+}
+.font_types{
+  margin-top: -89px;
+
 
 }

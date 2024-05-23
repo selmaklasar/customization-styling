@@ -1,17 +1,35 @@
 .upload_logo{
 
-
-    width: 50px;
-    height: 50px;
+   
+   font-size: 10px;
+    width: 40px;
+    height: 30px;
 
 }
-.choose_position{
+path {
+    fill: rgb(0, 0, 0);
+}
 
+.choose_positions{
 
+display: flex;
 position: relative;
+justify-content: center;
+align-items: center;
+margin-left: 150px;
+top: 182px;
 
-left: 400px;
-top: 25px;
+
+}
+.font_front_image{
+    
+    margin-left: 8px;
+
+}
+ 
+b{
+   margin-top: 55px;
+
 }
 
 .front_image{
@@ -21,7 +39,7 @@ height: 60px;
 position: relative;
 
 bottom: 20px;
-left: 55px;
+left: 60px;
 
 border: solid black;
 
@@ -78,17 +96,37 @@ border: solid black;
 
 
 }
+.update_button{
+    
+    top: -862px;
+    width: 90px;
+    height: 27px;
+    border-radius: 5px;
+padding-top: 4px;
+}
 .upload_div{
 position: relative;
-top: 80px;
-left: 20px;
 
+
+height: 10px;
+
+
+
+margin-right: 60px;
+
+
+top: -300px;
+
+
+
+
+float: right;
+margin-right: 35px;
+display: flex;
 }
 .font_right_side{
 
     position: relative;
-    
-    
     right: 30px;
 
 
@@ -96,8 +134,6 @@ left: 20px;
 .font_back_side{
 
     position: relative;
-    
-    
     right: 65px;
 
 
@@ -105,8 +141,335 @@ left: 20px;
 .font_left_side{
 
     position: relative;
-    
-    
-    right: 100px;
+     right: 100px;
 
+}
+.canvas_style{
+   justify-content: center;
+    position: relative;
+    display: flex;
+    top: 47px;
+}
+.front_image  b{
+top:50px;
+}
+.delete_all_button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    float: right;
+  
+  width: 80px;
+height: 28px;
+   padding-top: 4px;
+  
+   right: 167px;
+
+border-radius: 5px;
+    background-color: black;
+    color: white;
+    top: -862px;
+}
+
+.update_button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    background-color: black;
+    color: white;
+    float: right;
+   right: 180px;
+    
+}
+.upload_logo path{
+    fill: rgb(14 0 0);
+}
+@media screen and (max-width: 924px) {
+
+    .left_image{
+        
+    
+        right: 80px;
+
+
+    }
+    .font_left_side{
+        
+    right: 157px;
+
+    }
+    .left_image, .back_image {
+
+       margin-left: 10px;
+
+   }
+   .front_image {
+     left:75px;
+   }
+   .font_front_image{
+       margin-left: 5px;
+   }
+   .font_back_side{
+    
+    left: -79px;
+
+   }
+   .back_image{
+    
+    margin-left: -10px;
+
+   }
+   .font_right_side{
+    
+    margin-left: -10px;
+
+   }
+   b{ 
+       position: relative;
+       margin-left: 15px;
+   }
+   .delete_all_button{
+    
+
+    
+    
+    right: 174px;
+
+ 
+
+   }
+}
+@media screen and (max-width: 820px) {
+
+    
+     .left_image, .back_image {
+
+        margin-left: 20px;
+
+    }
+    .front_image , .right_image{
+       margin-left: 0px; 
+    }
+    .font_front_image{
+        margin-left: 5px;
+    }
+    b{ 
+        position: relative;
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 750px) {
+
+  .upload_div{
+    
+    top: -299px;
+
+  }
+  .button{
+    
+    margin-right: 102px;
+
+  }
+  .update_button{
+    
+    bottom: 863px;
+
+  }
+   
+     .left_image, .back_image {
+
+        margin-left: 20px;
+
+    }
+    .front_image , .right_image{
+       margin-left: 0px; 
+    }
+    .font_front_image{
+        
+    left: 44px;
+
+    margin-left: 0px;
+    left: 45px;
+
+    }
+    b{ 
+        position: relative;
+        margin-left: 15px;
+    }
+   
+    .upload_div{
+       
+        
+    
+    top: -297;
+    margin-right: 45px;
+
+    }
+    
+    
+        
+    
+   
+
+    
+    .delete_all_button{
+        
+   
+        right: 174px;
+
+    
+
+    }
+    
+        
+    }
+    @media screen and (max-width: 600px){
+        .delete_all_button{
+        
+           
+    right: 174px;
+ right: 164px;
+        
+            }
+            
+    }
+@media screen and  (max-width: 800px) {
+
+    .choose_position {
+        /* Update the flex-direction to column for better alignment */
+        flex-direction: column;
+    }
+     .left_image, .back_image {
+
+        margin-left: 20px;
+
+    }
+    .front_image , .right_image{
+       margin-left: 0px; 
+    }
+    .font_front_image{
+        margin-left: 5px;
+    }
+    b{ 
+        position: relative;
+        margin-left: 15px;
+    }
+   
+    .delete_all_button{
+        
+ 
+        right: 174px;
+
+   
+
+    }
+    .upload_div{
+        
+   
+    top: -250;
+
+    }
+    .font_right_side{
+        right: 15px;
+    }
+        
+    }
+    @media screen and(max-width: 650px){
+        
+    
+    .choose_positions{
+        
+        margin-left: 115px;
+        top: 145px;
+        margin-left: 99px;
+        gap: 9px;
+    }
+     .right_image{
+         left: 16px;
+        
+        }
+        .font_right_side{
+        
+        margin-left: 0px;
+        left: -52px;
+        right: 100px;
+       
+        }
+        .choose_positions{
+        
+        margin-left: 93px;
+        
+        }
+       img  .back_image{
+        
+        margin-left: 0px;
+        right: 16px;
+        
+        }
+        
+       img  .left_image{
+        
+        margin-left: 0px;
+        left: -48px;
+        
+        }
+        .font_front_image{
+           
+    left: 44px;
+
+        }
+       img  .front_image{
+        
+    left: 64px;
+
+        margin-left: 0px;
+      
+        
+        }
+        .delete_all_button{
+        
+        right: 150px;
+        
+        
+        }
+      
+    }    
+    @media screen and (max-width: 450px){
+       
+        
+        .choose_positions{
+            margin-left: 99px;
+            gap: 5px;
+        }
+.front_image{
+    left: 97px;
+}
+       .font_front_image{
+       
+    margin-left: 0px;
+    left: 41px;
+
+        
+ 
+   
+
+
+       } 
+       .right_image{
+        
+    left: 45px;
+
+    }
+       .left_image{
+        
+    right: 66px;
+
+       }
+    }
+    
+@media screen and(max-width: 540px){
+    .choose_position  .font_front_image{
+left: 26px;
+    }
 }

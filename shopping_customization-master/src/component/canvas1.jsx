@@ -35,9 +35,9 @@ function Canvas1() {
     return (
       <>
         <div>
-          <Canvas
-            style={{ width: '100%', height: '70vh' }}
-            eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 8], fov: 35 }} >
+          <Canvas 
+            style={{ width: '50%', height: '70vh' }}
+            eventSource={document.getElementById('root')} eventPrefix="client" camera={{ position: [0, 0, 8], fov: 35 }} className={styles.canvas_styling}  >
             <color attach="background" args={["#213547"]} />
             <fog attach="fog" args={["#213547", 10, 20]} />
             <OrbitControls />
@@ -52,27 +52,38 @@ function Canvas1() {
           </Canvas>
         </div>
 
-        <h2>Color chooser</h2>
-        <div className='colors'>
-          <div>
-            <h2> vest  color </h2>
+        
+        <div className={styles.colors}>
+        <p className={styles.h2}> vest  color</p><br></br>
+          <div className={styles.shirt_colors}>
+           
             <input type="button" id="mesh" name="vest" className={styles.shirt} onClick={(e) => setVest('yellow')} />
             <input type="button" id="mesh" name="vest" className={styles.shirt1} onClick={(e) => setVest('red')} />
             <input type="button" id="mesh" name="vest" className={styles.shirt2} onClick={(e) => setVest('blue')} />
             <input type="button" id="mesh" name="vest" className={styles.shirt3} onClick={(e) => setVest('green')} />
           </div>
-          <div>
-            <input type="color" id="button" name="button" value={button} onChange={(e) => setButton(e.target.value)} />
-            <label>Button Color</label>
-          </div>
-          <div>
-            <input type="color" id="packet" name="packet" value={packet} onChange={(e) => setPacket(e.target.value)} />
-            <label>Pocket Color</label>
-            <input type="color" id="shirtcolor" name="shirtcolor" value={shirtColor} onChange={(e) => setShirtColor(e.target.value)} />
-            <label>Shirt Color</label>
+          
+           
+          
+          <div className={styles.color_palette}>
+            
+           
+           
+            <div className={styles.tie_colorpalette}>
             <input type="color" id="shirtcolor" name="shirtcolor" value={shirtColor} onChange={(e) => setTieColor(e.target.value)} />
-            <label>Tie Color</label>
-          </div>
+           <label>Tie </label>
+            </div>
+            <div className={styles.button_colorpalette}>
+          <input type="color" id="button" name="button" value={button} onChange={(e) => setButton(e.target.value)} /><br></br>
+            <label>Button</label></div>
+            <div className={styles.pocket_colorpalette}>
+            <input type="color" id="packet" name="packet" value={packet} onChange={(e) => setPacket(e.target.value)} /><br></br>
+            <label>Pocket </label></div>
+            <div className={styles.shirt_colorpalette}>
+            <input type="color" id="shirtcolor" name="shirtcolor" value={shirtColor} onChange={(e) => setShirtColor(e.target.value)} /><br></br>
+            <label>Shirt </label></div>
+            </div></div>
+            <div className={styles.btn}>
           <button className="dropdown-toggle" onClick={toggleDropdown}>
             Select an option
           </button>

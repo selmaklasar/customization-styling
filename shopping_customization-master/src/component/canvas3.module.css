@@ -13,7 +13,7 @@
 }
 .customization{
 
-    position: fixed;
+    position: relative;
     left: 24px;
     bottom: 15vh;
     width: 100%;
@@ -25,10 +25,10 @@
 }
 .canvas{
 
-    position: fixed;
+    position: relative;
     display: flex;
     top:25vh;
-    left:24px
+    left: 300px
 
 }
 .shirt{
@@ -140,9 +140,10 @@
 }
 .upload{
 
-position: fixed;
+position: relative;
 display: flex;
-right: 10px;
+float: right;
+margin-right: 150px;
 
 bottom: 10vh;
 }
@@ -155,14 +156,10 @@ height: 50px;
 }
 
 .canvas{
-
 position: relative;
 
 top:50px;
-
 left: 200px;
-
-
 width: 100vw;
 height: 100vh;
 
@@ -170,11 +167,12 @@ height: 100vh;
 
 
 }
-.canvas_style{
+.canvas_styles{
 
 margin-left: 100px;
-    width: "50vw";
-    height: "50vh"
+    width: "20vw";
+    height: "30vh";
+    
 
 
 }
@@ -183,13 +181,21 @@ margin-left: 100px;
 
 position: relative;
 
-top: 40px;
-left: 1100px;
 
-background-color:  #3CB371;
+display: flex;
+float: right;
+border-radius:  4px;
+height: 27px;
+
+top: 30px;
+background-color:  #080808;
 color: white;
-border-color:  #3CB371;
+border-color:  #000000;
+margin-right: 74px;
+}
 
+.upload  path {
+    fill: rgb(14 0 0);
 }
 
 
@@ -202,5 +208,377 @@ color: white;
 .material_color{
 
     color: white;
+
+}
+
+@media screen and (max-width: 900px) {    
+ .button{
+    left: 4px;
+   
+    
+   }
+   .upload{
+          
+    left: 735px;
+    top: -200px;
+        }
+  .canvas_styles{
+            left: 200px;
+ }
+    
+    .upload_div  h3{
+    margin-right: 290px;
+    margin-top: -350px;
+     margin-bottom: 5px;
+        }
+    .upload_div{
+        float: right;
+        right: 700px;
+        
+    top: -297px;
+
+   
+
+    }
+        }
+      
+    
+  @media screen and (max-width: 1024px) {
+    .upload_div  h3{
+         margin-right: 240px;
+         margin-top: -380px;
+        margin-bottom: 5px;
+    
+    }
+    .upload_div{
+        float: right;
+        right: 700px;
+    }
+   
+    .button {
+        
+    top: 30px;
+    
+    
+    margin-right: 85px;
+
+}
+      .upload {
+        right: auto;
+        left: 35px;
+        top: -420px;
+      }
+    
+    .canvas_styles{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 225px;
+        
+    }
+    .choose_position{
+         display: flex;  
+         justify-content: center; 
+         align-items: center;
+         top: 10px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .upload_div  h3{
+        
+        margin-right: 240px;
+    
+        margin-top: -380px;
+        margin-bottom: 5px;
+    
+    }
+    .upload_div{
+        float: right;
+        
+    }
+    .button{
+       float: right;
+      
+
+    }
+    .upload{
+      float: right;
+      
+       
+       top: -420px;
+
+     
+    }
+   
+    .canvas_styles{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 225px;
+       
+    }
+   
+  }
+
+
+  @media screen and (max-width: 830px) {
+    .upload_div  h3{
+        
+        margin-right: 240px;
+        margin-top: -380px;
+        margin-bottom: 5px;
+    
+    }
+    .upload_div{
+        float: right;
+        right: 700px;
+        
+    top: -295px;
+
+    }
+    .button{
+        right: 0px;
+        
+            margin-right: 145px;
+       
+        top: 30px;
+       
+        left: 72px;
+    }
+    .upload{
+       right: auto;
+      
+      
+       top: -420px;
+       left: 632px;
+     
+    }
+   
+    .canvas_styles{
+      display: flex;
+      justify-content: center;
+        left: 455px;  
+       top: 66px;
+ 
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    .upload_div  h3{
+        
+        margin-right: 240px;
+        margin-top: -380px;
+        margin-bottom: 5px;
+    
+    }
+    .upload_div{
+        float: right;
+        right: 700px;
+    }
+    .button  {
+     right: 0px;
+     margin-right: 82px;
+    top: 30px;
+
+     left: 72px;
+    }
+    .upload{
+       right: auto;
+      
+      
+       top: -420px;
+       left: 632px;
+     
+    }
+   
+   
+    .canvas_styles{
+      display: flex;
+      justify-content: center;
+        left: 455px;  
+       top: 66px;
+ width: 250px;
+        
+    }
+    .canvas_styles Canvas{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .upload_div  h3{
+        
+        margin-right: 240px;
+    
+        margin-top: -300px;
+        margin-bottom: 5px;
+    
+    }
+    .upload_div{
+        float: right;
+        right: 700px;
+    }
+    .button{
+        right: 0px;
+       
+        
+       
+        left: 0px;
+    }
+    .upload{
+       right: auto;
+      
+      
+       top: -420px;
+       left: 632px;
+     
+    }
+   
+    .canvas_styles{
+      display: flex;
+      justify-content: center;
+        left: 455px;  
+       top: 66px;
+ 
+        
+    }
+    
+   
+  
+}
+.choose_position{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+}
+@media screen and (max-width: 700px) {
+
+
+.button{
+    left: 15px;
+     margin-right: 102px;
+    
+      
+}
+
+.upload_div{
+    bottom: 1200px;
+}
+
+    
+}
+
+.upload_logo{
+
+   
+    font-size: 10px;
+     width: 40px;
+     height: 30px;
+ 
+ }
+ path {
+     fill: rgb(0, 0, 0);
+ }
+ @media screen and(max-width: 500px){
+    .canvas_styles{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 225px;
+       
+    }
+    .front_image{
+        left: 62px;
+    }
+    
+    .right_image{
+        left: 20px;
+    }
+    .back_image{
+        right: 11px;
+    }
+    .left_image{
+        right: 68px;
+    }
+    
+ }
+ @media screen and(max-width: 380px){
+.canvas_styles Canvas{
+width: 230px;
+height: 285px;
+}
+canvas {
+    height: 264.475px;
+}
+.choose_position{
+    
+    margin-left: 90px;
+
+    width: 56.2px;
+
+}
+
+ }
+
+ @media screen and(max-width: 425px){
+.canvas_styles .canvas{
+
+    top: 53px;
+}
+
+canvas {
+    height: 225.475px;
+}
+    .choose_position{
+        
+margin-left: 115px;
+
+top: 145px;
+margin-left: 99px;
+
+
+    }
+    .right_image{
+
+
+
+
+left: 11px;
+
+}
+.font_right_side{
+
+margin-left: 0px;
+left: -52px;
+right: 100px;
+
+}
+.choose_position{
+
+margin-left: 93px;
+
+}
+.back_image{
+
+margin-left: 0px;
+right: 16px;
+
+}
+
+.left_image{
+
+margin-left: 0px;
+left: -48px;
+
+}
+.front_image{
+
+
+
+left: 44px;
+
+
+}
 
 }

@@ -4,8 +4,10 @@ import { Context12, Context13, Context8, Context9 } from './component/canvas3';
 import style from './text_2d_canvas.module.css';
 import left from './left_side_black.png';
 import right from './right side.png';
-import logo from './assets/Upload-icon.svg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faUpload } from '@fortawesome/free-solid-svg-icons';
 function CanvasImageUploader2() {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -176,22 +178,22 @@ function CanvasImageUploader2() {
             style={{
               cursor: dragging ? 'grabbing' : 'grab',
               position: 'relative',
-              left: '460px',
-              top: '30px',
+            
+              top: '35px',
             }}
           />
         </div>
         
         <div className={style.upload_div}>
-          <h3>Upload</h3>
+          
           <input type="file" id="imageInput" accept="image/*" onChange={handleImageUpload} ref={inputRef} style={{ display: 'none' }} multiple />
-          <img src={logo} onClick={() => inputRef.current.click()} className={style.upload_logo} />
+          <FontAwesomeIcon icon={faUpload}  onClick={() => inputRef.current.click()} className={style.upload_logo} />
         </div>
         
         <div>
-          <div className={style.choose_position}>
+          <div className={style.choose_positions}>
             <img src={tshirtImage} alt='front image' className={style.front_image} onClick={() => setImage_side(tshirtImage)} />
-            <b>Front</b>&nbsp;&nbsp;
+            <b className={style.font_front_image}>Front</b>&nbsp;&nbsp;
             <img src={right} alt='right image' className={style.right_image} onClick={() => setImage_side(right)} />
             <b className={style.font_right_side}>Right side</b>
             <img src={tshirtImage} alt='back image' className={style.back_image} onClick={() => setImage_side(tshirtImage)} />

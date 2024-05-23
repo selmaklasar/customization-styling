@@ -20,11 +20,29 @@ import ImageRotator from './component/triangle';
 import Image_backend from './image';
 import CanvasImageUploader from './texting_2d_canvas';
 import CanvasImageUploader2 from './text2_2d';
+import BufferingAnimation from './Buffering';
+
+
+
+
 
 const ImageContext = createContext();
 
 export const useImage = () => useContext(ImageContext);
 function App() {
+ 
+  const [isBuffering, setIsBuffering] = useState(false);
+
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsBuffering(false); // Set isBuffering to false after 3 seconds (simulating end of buffering)
+    }, 3000);
+
+    setIsBuffering(true); // Set isBuffering to true when buffering starts
+
+    return () => clearTimeout(timeout); // Cleanup the timeout to avoid memory leaks
+  }, []);
   
   const [image5, setImage5] = useState(vegata);
 useEffect(()=>{
@@ -40,6 +58,7 @@ useEffect(()=>{
   
      <ImageContext.Provider value={{ image5, setImage5 }}>
      <Provider store={store}>
+     <BufferingAnimation isBuffering={isBuffering} />
   <Router>
     <Routes>
       
@@ -50,7 +69,7 @@ useEffect(()=>{
           <Route exact path="/canvas3" element={<Canvas3/>} />
           <Route exact path="/curved" element={<CurvedText/>} />
           <Route exact path="/download" element={<CanvasDownload/>} />
-          <Route exact path="/normal" element={<Canvas_normal/>} />
+          <Route exact path="/normal" element={<Canvas_normal/>} /> 
           <Route exact path="/canvas4" element={<TwoCanvasText/>} />
           <Route exact path="/circle" element={<CanvasDownload2/>} />
           <Route exact path="/rotation" element={<ImageRotator/>} />

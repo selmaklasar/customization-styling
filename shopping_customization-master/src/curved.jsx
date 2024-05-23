@@ -70,27 +70,31 @@ text:{
     <div className={style.curved_text_container}>
       <svg
         id="curved-text-svg"
-        viewBox={`0 0 500 500`}
+        viewBox={` 0 500 500`}
         x="100"
         y="100"
         width="500"
-        height="500"
+        height="500" 
 
-       
+       style={{backgroundColor: 'white'}}
       >
         <path id="curve" d={`M150,${angle2} Q310,120 ${angle},320`} fill="none" />
         <text width="1100"   style={{fill:color,fontStyle:'italic' ,fontSize:'larger',fontFamily: fontFamily,letterSpacing:`${letter_space}`}}>
           <textPath xlinkHref="#curve">{curve}</textPath>
         </text>
       </svg>
-
-      <input
+      <div className={style.input_field}>
+      <input  className={style.inputfield}
         type="text"
         onChange={(e) => {
           setCurve(e.target.value);
+         
         }}
-      />
-      <button onClick={downloadSVG}>Download SVG</button>
+      /></div>
+      <div className={style.download_btn}>
+      <button onClick={downloadSVG} className={style.download_btn}>Download SVG</button><br></br>
+        </div>
+        <div className={style.color_container}>
       <input
             type="button"
             id="mesh"
@@ -127,7 +131,7 @@ text:{
             onClick={(e) => setColor("purple")}
           />
 
-          <br></br>
+         
           <input
             type="button"
             id="mesh"
@@ -149,10 +153,13 @@ text:{
             className={style.shirt7}
             onClick={(e) => setColor("white")}
           />
+          </div>
+          <div className={style.font_types}>
           <select onChange={(e) => setFontFamily(e.target.value)}>
+          
   <option value="sans-serif">sans-serif</option>
   <option value="fantasy">fantasy</option>
-</select>
+</select></div>
     </div>
   );
 };

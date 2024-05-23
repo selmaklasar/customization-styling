@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFont ,faDownload,faAngleRight} from '@fortawesome/free-solid-svg-icons';
+
+
 
 import style from './curvedcanvas.module.css'
 

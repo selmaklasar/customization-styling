@@ -9,8 +9,10 @@ import right from './right side.png'
 
 import ImageCrop from 'react-image-crop';
 
-import logo from './assets/Upload-icon.svg'
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpload } from '@fortawesome/free-solid-svg-icons';
 
 function CanvasImageUploader() {
 
@@ -320,8 +322,8 @@ const back_image=()=>{
       <div className={style.canvas_style}>
         <canvas
           ref={canvasRef}
-          width={390}
-          height={350}
+          width={300}
+          height={300}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
@@ -329,19 +331,19 @@ const back_image=()=>{
           style={{
             cursor: dragging ? 'grabbing' : 'grab',
             position: 'relative',
-            left: '460px',
-            top: '30px',
+           
+            top: '90px',
           }}
         />
       </div>
       
       <div className={style.upload_div}>
 
-      <h3>Upload</h3>
+     
 
         <input type="file" id="imageInput" accept="image/*" onChange={handleImageUpload} ref={inputRef} style={{ display: 'none' }} multiple />
   
-        <img src={logo}   onClick={() => inputRef.current.click()} className={style.upload_logo}/>
+        <FontAwesomeIcon icon={faUpload}   onClick={() => inputRef.current.click()} className={style.upload_logo}/>
 
      
       </div>
@@ -352,7 +354,7 @@ const back_image=()=>{
 
 
 
-<div className={style.choose_position}>
+<div className={style.choose_positions}>
 
 <img src={tshirtImage} alt='front image' className={style.front_image} onClick={front_image}/>
 

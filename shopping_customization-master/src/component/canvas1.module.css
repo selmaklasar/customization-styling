@@ -170,7 +170,7 @@
     }
     .canvas_styling {
         width: 70%;
-        
+        left: 269px;
     }
 }
 
@@ -464,8 +464,8 @@
         justify-content: center;
         align-items: center;
         
+        left: 269px;
        
-
     }
     .color_palette{
         
@@ -563,6 +563,11 @@
   
 
 }
+.color_palette{
+    
+    margin-right: -195px;
+
+}
 }
 @media screen and (max-width: 750px){
 
@@ -572,8 +577,8 @@
     height: 70vh;
     overflow: hidden;
     pointer-events: none;
+    left: 269px;
     
-    left: 170px;
     justify-content: center;
     align-items: center;
       
@@ -696,7 +701,7 @@
             position: relative;
             width: 82%;
             height: 70vh;
-            left: 84px;
+            left: 269px;
         }
         .colors{
             position: relative;

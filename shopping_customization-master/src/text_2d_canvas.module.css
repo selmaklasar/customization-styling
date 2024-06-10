@@ -98,7 +98,7 @@ border: solid black;
 }
 .update_button{
     
-    top: -862px;
+    top: -325px;
     width: 90px;
     height: 27px;
     border-radius: 5px;
@@ -153,6 +153,14 @@ display: flex;
 .front_image  b{
 top:50px;
 }
+.update_button{
+    
+    margin-top: -862px;
+    margin-left: 70px;
+    margin-bottom: 1036px;
+   
+
+}
 .delete_all_button{
     display: flex;
     justify-content: center;
@@ -168,9 +176,40 @@ height: 28px;
 border-radius: 5px;
     background-color: black;
     color: white;
-    top: -862px;
+    top: -926px;
 }
+@media screen and (max-width: 1440px) {
+    .update_button{
+        top: -863px;
+    }
+    .delete_all_button{
+        top: -863px;
+    }
+}
+@media screen and (max-width: 1024px) {
+.delete_all_button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    float: right;
+    width: 80px;
+    height: 28px;
+    padding-top: 4px;
+    right: 167px;
+    
+    top: -863px;
 
+}
+.update_button{
+     
+    margin-top: -862px;
+    margin-left: 70px;
+    margin-bottom: 1036px;
+   
+}
+.upload_div{
+    top: -296px;
+}
 .update_button{
     display: flex;
     justify-content: center;
@@ -185,8 +224,52 @@ border-radius: 5px;
 .upload_logo path{
     fill: rgb(14 0 0);
 }
+@media screen and (max-width: 1200px) {
+    .delete_all_button{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        float: right;
+        width: 80px;
+        height: 28px;
+        padding-top: 4px;
+        right: 167px;
+       
+        top: -864px;
+    
+    }
+    .update_button{
+          
+    margin-top: -862px;
+    margin-left: 70px;
+    margin-bottom: 1036px;
+   
+    }
+    .upload_div{
+        top: -296px;
+    }
+}    
+@media screen and (max-width: 1440px){
+    .delete_all_button{
+        top: -863px;
+    }
+    .update_button{
+         
+    margin-top: -862px;
+    margin-left: 70px;
+    margin-bottom: 1036px;
+   
+       
+    }
+    .upload_div{
+        top: -296px;
+    }
+    
+}
 @media screen and (max-width: 924px) {
-
+.upload_div{
+    top: -296px;
+}
     .left_image{
         
     
@@ -232,16 +315,21 @@ border-radius: 5px;
    .delete_all_button{
     
 
-    
+    top: -864px;
     
     right: 174px;
 
  
 
    }
+   .update_button{
+    top: -864px;
+   }
 }
 @media screen and (max-width: 820px) {
-
+.upload_logo{
+    top: -296px;
+}
     
      .left_image, .back_image {
 
@@ -258,22 +346,22 @@ border-radius: 5px;
         position: relative;
         margin-left: 15px;
     }
+    .delete_all_button{
+        top: -864px;
+        }
+    }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
 
-  .upload_div{
-    
-    top: -299px;
-
-  }
+  
   .button{
     
     margin-right: 102px;
 
   }
   .update_button{
-    
-    bottom: 863px;
+    top: -863px;
+   
 
   }
    
@@ -299,26 +387,15 @@ border-radius: 5px;
     }
    
     .upload_div{
-       
-        
-    
-    top: -297;
+        top: -296px;
     margin-right: 45px;
 
     }
-    
-    
-        
-    
-   
-
-    
+     
     .delete_all_button{
-        
-   
-        right: 174px;
-
-    
+        right:
+         174px;
+        top: -864px;
 
     }
     
@@ -326,12 +403,19 @@ border-radius: 5px;
     }
     @media screen and (max-width: 600px){
         .delete_all_button{
-        
+            top: -648px;
            
     right: 174px;
  right: 164px;
         
             }
+            .update_button{
+                top: -863px;
+            }
+            .upload_div{
+                top: -296px;
+            }
+
             
     }
 @media screen and  (max-width: 800px) {
@@ -361,22 +445,39 @@ border-radius: 5px;
  
         right: 174px;
 
-   
+        top: -864px;
 
     }
     .upload_div{
         
-   
-    top: -250;
+        top: -296px;
 
     }
     .font_right_side{
         right: 15px;
     }
+    .update_button{
+        top: -863px;
+        }
+    
+}
+    @media screen and(max-width: 853px){
+        .delete_all_button{
+            top: -864px;
+        }
+        .update_button{
+            top: -863px;
+        }
+        .upload_div{
+            top: -296px;
+        }
         
-    }
+        }
+    
     @media screen and(max-width: 650px){
-        
+        .update_button{
+            top: -863px;
+        }
     
     .choose_positions{
         
@@ -431,13 +532,15 @@ border-radius: 5px;
         
         right: 150px;
         
-        
+        top: -863px;
         }
       
     }    
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 412px){
        
-        
+        .upload_logo{
+            top: -648px;
+        }
         .choose_positions{
             margin-left: 99px;
             gap: 5px;
@@ -466,10 +569,40 @@ border-radius: 5px;
     right: 66px;
 
        }
+       .delete_all_button{
+        top: -863px;
+       }
+       .update_button{
+        top: -645px;
+       }
+       .font_front_image{
+        left: 44px;
+       }
     }
     
 @media screen and(max-width: 540px){
     .choose_position  .font_front_image{
 left: 26px;
     }
+    .upload_div{
+        top: -863px;
+    }
+    .delete_all_button{
+        top: -863px;
+    }
 }
+
+@media screen and(max-width: 375px){
+.update_button{
+    
+    top: -864px;
+
+}
+
+.delete_all_button{
+    top: -863px;
+}
+
+}
+
+
